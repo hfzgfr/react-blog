@@ -1,3 +1,4 @@
 # react-blog
 
-A side project with react.js
+A side project using React.js.
+
