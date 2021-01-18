@@ -1,14 +1,20 @@
-import './App.css';
-import Header from './navigations/Header';
-import BlogHome from './components/BlogHome';
-import BlogPost from './components/BlogPost';
+import NavBar from './navigations/NavBar';
+import Home from './components/Home';
+// import BlogPost from './components/BlogPost';
 
 function App() {
+  const title = "Blog Title";
+  const owner = 'Hafiz';
+
   return (
     <div className="App">
-      <Header />
-      <h1>Hello Index</h1>
-      <BlogHome />
+      <NavBar/>
+      <div className="content">
+        <h1>{ title }</h1>
+        <p>Created by { owner }</p>
+        < Home />
+        {/* <BlogPost /> */}  
+      </div>
     </div>
   );
 }
